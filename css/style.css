@@ -1,0 +1,368 @@
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner-title {
+    color: rgb(0, 0, 67);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+li {
+    list-style: none;
+    text-align: left;
+}
+
+a, span, p {
+    font-size: 16px;
+}
+
+a {
+    color: #ffffff;
+}
+
+/************************************HEADER***********************************/
+
+
+/*********************************NAVIGATION*********************************/
+
+.collapse {
+    position: relative;
+}
+
+.navbar-nav {
+    position: absolute;
+    right: 0;
+}
+
+/*********************************END NAVIGATION*******************************/
+
+.btn-primary {
+    font-weight: bolder;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: rgb(255, 80, 135)!important;
+    border-color: rgb(255, 80, 135)!important;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    background-color: rgb(227, 72, 121)!important;
+    border-color: rgb(227, 72, 121)!important;
+}
+
+/************************************BANNER**********************************/
+
+.banner-wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 80px;
+}
+
+.left-section p, h1{
+    text-align: justify;
+}
+
+.left-section p {
+    font-size: 18px;
+    padding: 10px 0;
+    color: #A2A2A2;
+}
+
+
+/************************************END BANNER**********************************/
+
+
+/*********************************END HEADER*********************************/
+
+
+/***********************************MAIN************************************/
+
+
+.work-wrapper {
+    padding: 2rem;
+    background-color: rgb(241, 241, 241);
+}
+
+.work-wrapper h2 {
+    color: rgb(0, 0, 67);
+    padding-bottom: 1rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.steps-goals {
+    display: grid;
+    grid-template: 1fr / repeat(3, 1fr);
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+}
+
+.steps-goals > div {
+    padding-right: 2rem;
+}
+
+.step img {
+    width: 180px;
+    height: 180px;
+}
+
+.step p {
+    color: rgb(0, 0, 67);
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.about-cryptogoal {
+    padding: 4rem;
+}
+
+.text-about, .text-miss {
+    max-width: 400px;
+    margin-left: 120px;
+}
+
+.text-about h2 {
+    color: rgb(0, 0, 67);
+    text-align: left;
+    padding-bottom: 1rem;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.text-about p {
+    text-align: justify;
+    color: grey;
+}
+
+.text-deadline {
+    max-width: 400px;
+    margin-right: 120px;
+}
+
+.text-deadline h2 {
+    color: rgb(0, 0, 67);
+    text-align: left;
+    padding-bottom: 1rem;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.text-deadline p {
+    text-align: justify;
+    color: rgb(0, 0, 67);
+}
+
+.text-miss h2 {
+    color: rgb(0, 0, 67);
+    text-align: left;
+    padding-bottom: 1rem;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.text-miss p {
+    text-align: justify;
+    color: grey;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.deadline-cryptogoal {
+    background-color: rgb(155, 241, 187);
+    padding: 4rem;
+}
+
+.deadline-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.miss-cryptogoal {
+    padding: 4rem;
+}
+
+.miss-crypto-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+/*********************************END MAIN**********************************/
+
+/***********************************FOOTER*********************************/
+
+.footer {
+    background-color: #2ed8eebf;
+}
+
+.footer-container {
+    padding: 1.5rem 2rem;
+}
+
+.footer-wrapper {
+    display: grid;
+    grid-template: 1fr / repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    flex: 1;
+}
+
+.footer-wrapper > div {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    margin: auto 0;
+}
+
+.logo span {
+    font-size: 26px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.social-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-decoration-none {
+    color: #ffffff;
+    line-height: 2rem;
+    font-weight: 600;
+}
+
+.site-socials {
+    flex-direction: column;
+}
+
+.site-socials span {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.site-socials .circle {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-color: #ffffff;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+
+.circle .x-logo-img {
+    width: 35px;
+    height: 35px;
+}
+
+.copyrights {
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.copyrights span {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/***********************************END FOOTER*********************************/
+
+/**********************************MEDIA QUERIES********************************/
+
+@media (max-width: 768px) {
+
+    .hide-br {
+        display: none;
+    }
+
+    .banner-wrapper {
+        flex-direction: column;
+    }
+
+    .image-section {
+        display: none;
+    }
+
+    .steps-goals {
+        grid-template: repeat(2, 1fr)/ 1fr;
+    }
+
+    .steps-goals > div {
+        padding: 0;
+    }
+
+    .text-about, .text-miss, .text-deadline {
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer-wrapper {
+        display:block;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .nav-footer-items {
+        text-align: center;
+    }
+
+    .footer-ul {
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    .social-container {
+        justify-content: center;
+    }
+
+    .site-socials {
+        text-align: center;
+    }
+
+    .site-socials .circle {
+        margin-top: 0;
+        margin-right: 0;
+        margin: 1rem;
+    }
+
+}
+
+/**********************************END MEDIA QUERIES********************************/
