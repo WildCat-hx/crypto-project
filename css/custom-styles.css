@@ -1,0 +1,17 @@
+:root {
+    /* Colors */
+    --main-title-color: rgb(0, 0, 67);
+    --button-bg-color:rgb(255, 80, 135)!important;
+    --button-hover-bg-color:rgb(227, 72, 121)!important;
+    --link-color:#ffffff;
+
+    /* Font & weight sizes */
+    --font-size-text-small:16px;
+    --font-size-text-medium:18px;
+    --font-size-sub-title:36px;
+    --font-weight-light:600;
+    --font-weight-medium:700;
+
+    /* Grid rules */
+    
+}
