@@ -1,0 +1,21 @@
+.grid-container {
+    display: grid;
+    grid-template: 1fr / repeat(3, 1fr);
+}
+
+
+
+.inline-infos {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1rem;
+}
+
+.grid-cell {
+    width: 400px;
+    height: 400px;
+}
+
+.first {
+    padding-top: 1rem;
+}
