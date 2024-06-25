@@ -1,17 +1,19 @@
 :root {
     /* Colors */
-    --main-title-color: rgb(0, 0, 67);
-    --button-bg-color:rgb(255, 80, 135)!important;
-    --button-hover-bg-color:rgb(227, 72, 121)!important;
-    --link-color:#ffffff;
+    --noir:#000000;
+    --dark-blue: #000043;
+    --violet:#3d21d4;
+    --light-pink:#ff6699!important;
+    --soft-pink:#E34879!important;
+    --white:#fafafa;
+    --light-grey: rgb(241, 241, 241);
+    --grey:#808080;
 
     /* Font & weight sizes */
-    --font-size-text-small:16px;
-    --font-size-text-medium:18px;
-    --font-size-sub-title:36px;
-    --font-weight-light:600;
-    --font-weight-medium:700;
+    --font-size-small:16px;
+    --font-size-medium:18px;
+    --font-size-big:36px;
 
-    /* Grid rules */
-    
+    --font-weight-light:600;
+    --font-weight-bold:700;
 }
