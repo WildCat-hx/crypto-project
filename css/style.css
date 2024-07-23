@@ -256,8 +256,23 @@ a {
 
 /********************ACCESSIBILITE*******************/
 
+.btn-primary:focus-visible {
+    outline: 2px solid var(--light-pink);
+    outline-offset: 2px;
+}
+
+#loginButton:focus-visible {
+    outline: 2px solid var(--light-pink);
+    outline-offset: 2px;
+}
+
 .register-link:focus-visible {
     outline: 2px solid var(--navy-blue);
+    outline-offset: 2px;
+}
+
+.close:focus-visible {
+    outline: 2px solid var(--noir);
     outline-offset: 2px;
 }
 
@@ -505,7 +520,7 @@ a {
     z-index: 1;
 }
 
-#scroll_Top > a {
+.scroll_Top_link {
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-medium);
 }
