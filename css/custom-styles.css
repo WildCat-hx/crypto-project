@@ -2,6 +2,7 @@
     /* Colors */
     --noir:#000000;
     --dark-blue: #000043;
+    --navy-blue : #0000B6;
     --violet:#3d21d4;
     --light-pink:#ff6699!important;
     --soft-pink:#E34879!important;
@@ -10,10 +11,11 @@
     --grey:#808080;
 
     /* Font & weight sizes */
-    --font-size-small:16px;
+    --font-size-small:15px;
     --font-size-medium:18px;
     --font-size-big:36px;
 
-    --font-weight-light:600;
+    --font-weight-light: 400;
+    --font-weight-normal:600;
     --font-weight-bold:700;
 }
