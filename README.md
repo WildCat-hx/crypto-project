@@ -9,11 +9,11 @@ Ce projet est un site statique. Pour le visualiser localement :
 
   <b>Clonez le dépôt :</b>
 
-  <code>git clone https://github.com/username/repository.git</code>
+  <code>git clone https://github.com/WildCat-hx/crypto-website.git</code>
 
   <b>Accédez au répertoire du projet :</b>
 
-  <code>cd repository</code>
+  <code>cd crypto-website</code>
 
 <p>Ouvrez le fichier index.html dans un navigateur web pour voir le site.</p>
 
