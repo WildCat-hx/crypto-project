@@ -40,6 +40,10 @@ textarea {
 
 @media (max-width: 768px) {
 
+    main {
+        margin: 20px;
+    }
+
     .contact-me {
         margin: 1rem;
     }
@@ -47,6 +51,12 @@ textarea {
     .contact-grid {
         grid-template-rows: 1fr 2fr;
         grid-template-columns: 1fr;
+    }
+
+    .inline-name {
+        display: grid;
+        gap: 1rem;
+        grid-template-rows: 1fr 1fr;
     }
 
     .left-side h2 {
