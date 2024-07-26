@@ -35,14 +35,19 @@ body {
 
 h1, h2 {
     font-family: "Roboto", sans-serif;
+    color: var(--main-color);
 }
 
 a, p, span {
     font-family: "Open Sans", sans-serif;
 }
 
+p {
+    color: var(--text-color);
+    font-size: var(--font-size-medium);
+}
+
 h2 {
-    color: var(--dark-blue);
     font-weight: var(--font-weight-normal);
     font-size: var(--font-size-big);
 }
@@ -59,8 +64,28 @@ span {
 }
 
 a {
-    color: var(--white);
+    color: var(--link-color);
     text-decoration: none;
+}
+
+section {
+    padding: 4rem
+}
+
+section > div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+section p {
+    text-align: justify;
+}
+
+section h2 {
+    text-align: left;
+    padding-bottom: 1rem;
 }
 
 /*************************HEADER*************************/
@@ -72,21 +97,21 @@ a {
 }
 
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-    background-color: var(--light-pink);
-    border-color: var(--light-pink);
+    background-color: var(--btn-color);
+    border-color: var(--btn-color);
     text-transform: uppercase;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-    background-color: var(--soft-pink);
-    border-color: var(--soft-pink);
+    background-color: var(--btn-color-hover);
+    border-color: var(--btn-color-hover);
 }
 
 /********************NAVIGATION*********************/
 
 .banner-title {
-    color: var(--dark-blue);
+    color: var(--main-color);
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -96,7 +121,7 @@ a {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #ffffff;
+    background-color: var(--ultra-white);
 }
 
 .container-fluid {
@@ -107,19 +132,23 @@ a {
 .navbar-brand {
     font-weight: var(--font-weight-normal);
     font-size: 25px;
-    color: var(--dark-blue);
+    color: var(--main-color);
 }
 
 #loginButton {
-    color: var(--light-pink);
+    color: var(--btn-color);
     background-color: transparent;
-    border: 3px solid var(--light-pink);
+    border: 3px solid var(--btn-color);
 }
 
 #loginButton:hover,
 #loginButton:focus {
-    border-color: var(--soft-pink);
-    color: var(--soft-pink);
+    border-color: var(--btn-color-hover);
+    color: var(--btn-color-hover);
+}
+
+.nav-link {
+    font-size: var(--font-size-medium);
 }
 
 /*******************BANNER*********************/
@@ -143,8 +172,6 @@ a {
 
 .left-section p {
     padding: 10px 0;
-    color: var(--grey);
-    font-size: var(--font-size-medium);
 }
 
 /********************MAIN*********************/
@@ -164,7 +191,7 @@ a {
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: var(--bg-color);
     margin: 8% auto;
     border: 1px solid #888;
     height: 500px;
@@ -191,7 +218,7 @@ a {
 
 .close:hover,
 .close:focus {
-    color: var(--noir);
+    color: var(--black);
     text-decoration: none;
     cursor: pointer;
 }
@@ -202,7 +229,7 @@ a {
 
 .login-submit {
     padding: 10px;
-    color: var(--white);
+    color: var(--link-color);
     border: none;
     cursor: pointer;
 }
@@ -227,7 +254,7 @@ a {
 }
 
 .mdp-oublie {
-    color: var(--grey);
+    color: var(--text-color);
 }
 
 .button-container {
@@ -237,7 +264,7 @@ a {
 
 .crea-compte {
     padding-top: 1rem;
-    color: var(--grey);
+    color: var(--text-color);
     font-weight: var(--font-weight-light);
     font-size: var(--font-size-small);
     text-align: center;
@@ -245,58 +272,46 @@ a {
 
 .register-link {
     text-decoration: underline;
-    color: var(--dark-blue);
+    color: var(--main-color);
     font-weight: var(--font-weight-bold);
 }
 
 .register-link:hover,
 .register-link:focus {
-    color: var(--navy-blue);
+    color: var(--link-register);
 }
 
 /********************ACCESSIBILITE*******************/
 
 .btn-primary:focus-visible {
-    outline: 2px solid var(--light-pink);
+    outline: 2px solid var(--btn-color);
     outline-offset: 2px;
 }
 
 #loginButton:focus-visible {
-    outline: 2px solid var(--light-pink);
+    outline: 2px solid var(--btn-color);
     outline-offset: 2px;
 }
 
 .register-link:focus-visible {
-    outline: 2px solid var(--navy-blue);
+    outline: 2px solid var(--link-register);
     outline-offset: 2px;
 }
 
 .close:focus-visible {
-    outline: 2px solid var(--noir);
+    outline: 2px solid var(--black);
     outline-offset: 2px;
 }
 
 /********************SECTIONS PRINCIPALES*******************/
 
-.welcome-wrapper {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-}
-
-.welcome-wrapper p {
-    color: var(--white);
-}
-
 .work-wrapper {
     padding: 2.5rem;
-    background-color: var(--light-grey);
+    background-color: var(--bg-section-color);
 }
 
 .work-wrapper h2 {
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     text-align: center;
 }
 
@@ -324,21 +339,9 @@ a {
 }
 
 .step p {
-    color: var(--dark-blue);
+    color: var(--main-color);
     text-align: center;
     font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-medium);
-}
-
-.about-cryptogoal {
-    padding: 4rem;
-}
-
-.about-container {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .text-about, .text-miss {
@@ -346,66 +349,17 @@ a {
     margin-left: 120px;
 }
 
-.text-about h2 {
-    text-align: left;
-    padding-bottom: 1rem;
-}
-
-.text-about p {
-    text-align: justify;
-    color: var(--grey);
-    font-size: var(--font-size-medium);
-}
-
 .text-deadline {
     max-width: 400px;
     margin-right: 120px;
 }
 
-.text-deadline h2 {
-    text-align: left;
-    padding-bottom: 1rem;
-}
-
-.text-deadline p {
-    text-align: justify;
-    color: var(--grey);
-    font-size: var(--font-size-medium);
-}
-
-.text-miss h2 {
-    text-align: left;
-    padding-bottom: 1rem;
-}
-
-.text-miss p {
-    text-align: justify;
-    color: var(--grey);
-    font-size: var(--font-size-medium);
-}
-
 .deadline-cryptogoal {
     background-color: var(--light-grey);
-    padding: 4rem;
-}
-
-.deadline-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.miss-cryptogoal {
-    padding: 4rem;
 }
 
 .miss-crypto-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row-reverse;
-    flex-wrap: wrap;
 }
 
 /*************************FOOTER************************/
