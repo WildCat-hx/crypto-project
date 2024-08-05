@@ -3,8 +3,10 @@ export const navbarWhite = document.querySelector(".navbar");
 export const loginButton = document.getElementById("loginButton");
 export const loginModal = document.getElementById("loginModal");
 export const closeModal = document.getElementsByClassName("close")[0];
+export const overlay = document.getElementById("overlay");
 
 export function scrollFunct() {
+
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         scrollTop.style.display = "block";
     } else {
@@ -12,20 +14,14 @@ export function scrollFunct() {
     }
 }
 
-export function showLoginModal() {
-    loginModal.style.display = "block";
+export function toggleLoginModal() {
+    var status = loginModal.style.display
+    let stat = (status === "none") ? "block" : "none";
+    loginModal.style.display = stat;
+    overlay.style.display = stat;
 }
 
-export function hideLoginModal() {
+export function closeLoginModal() { 
     loginModal.style.display = "none";
-}
-
-export function change_form() {
-    if (window.getComputedStyle(registerModal).display === "none") {
-        registerModal.style.display = "block";
-        loginModal.style.display = "none";
-    } else {
-        registerModal.style.display = "none";
-        loginModal.style.display = "block";
-    }
+    overlay.style.display = "none";
 }
