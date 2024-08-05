@@ -94,29 +94,32 @@
     <main class="main" role="main">
         
         <div id="loginModal" class="modal">
-            <div class="modal-content">
-                <span class="close" aria-label="Close">&times;</span>
-                <div class="modal-container" id="Login-side">
-                    <h2 class="login-subtitle">Sign In</h2>
-                    <form id="loginForm" class="contact-form">
-                        <div class="form-row inline-name">
-                            <div class="form-group inline-icon">
-                                <label for="inputText4">Username:</label>
-                                <input type="text" id="username" name="username" class="form-control" required>
+            <div id="overlay">
+                <div class="modal-content">
+                    <span class="close" aria-label="Close">&times;</span>
+                    <div class="modal-container" id="Login-side">
+                        <h2 class="login-subtitle">Sign In</h2>
+                        <form id="loginForm" class="contact-form">
+                            <div class="form-row inline-name">
+                                <div class="form-group inline-icon">
+                                    <label for="inputText4">Username:</label>
+                                    <input type="text" id="username" name="username" class="form-control" required>
+                                </div>
+                                <div class="form-group inline-icon">
+                                    <label for="password">Password:</label>
+                                    <input type="password" id="password" name="password" class="form-control" required>
+                                    <a class="mdp-oublie" href="#">Forgot password?</a>
+                                </div>
+                                <div class="button-container">
+                                    <button class="btn btn-primary login-submit" type="submit">Login</button>
+                                    <span class="crea-compte">No account? <a class="register-link" href="#">Sign up</a></span>
+                                </div>
                             </div>
-                            <div class="form-group inline-icon">
-                                <label for="password">Password:</label>
-                                <input type="password" id="password" name="password" class="form-control" required>
-                                <a class="mdp-oublie" href="#">Forgot password?</a>
-                            </div>
-                            <div class="button-container">
-                                <button class="btn btn-primary login-submit" type="submit">Login</button>
-                                <span class="crea-compte">No account? <a class="register-link" href="#">Sign up</a></span>
-                            </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
+            
         </div>
 
         <div class="how-it-work">
