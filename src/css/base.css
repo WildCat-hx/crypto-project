@@ -1,6 +1,6 @@
 /********************IMPORTS ET POLICES*********************/
 
-@import url('scss/main.scss');
+@import url('../scss/styles.scss');
 
 @font-face {
     font-family: 'Roboto';
