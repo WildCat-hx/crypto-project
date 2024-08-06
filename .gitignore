@@ -10,4 +10,5 @@
 # dossiers dependances
 node_modules/
 
+# fichiers specifiques a VSCODE
 .vscode/
