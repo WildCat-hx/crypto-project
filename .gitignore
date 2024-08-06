@@ -1,0 +1,13 @@
+# logs
+*.logs
+
+# fichiers .git
+.git
+
+# dossier npm cache
+.npm
+
+# dossiers dependances
+node_modules/
+
+.vscode/
