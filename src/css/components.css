@@ -219,3 +219,62 @@
     font-size: var(--font-size-small);
     text-align: center;
 }
+
+/********************SECTIONS mAIN*******************/
+
+.work-wrapper {
+    padding: 2.5rem;
+    background-color: var(--bg-section-color);
+}
+
+.work-wrapper h2 {
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.steps-goals {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.steps-container {
+    display: grid;
+    grid-template: 1fr / repeat(3, 1fr);
+    gap: 100px;
+    align-items: center;
+    justify-items: center;
+}
+
+.steps-container > div {
+    padding: 1rem;
+}
+
+.step img {
+    width: 180px;
+    height: 180px;
+}
+
+.step p {
+    color: var(--main-color);
+    text-align: center;
+    font-weight: var(--font-weight-bold);
+}
+
+.text-about, .text-miss {
+    max-width: 400px;
+    margin-left: 120px;
+}
+
+.text-deadline {
+    max-width: 400px;
+    margin-right: 120px;
+}
+
+.deadline-cryptogoal {
+    background-color: var(--bg-section-color);
+}
+
+.miss-crypto-container {
+    flex-direction: row-reverse;
+}
