@@ -1,5 +1,6 @@
-@import 'base.css';
-@import 'components.css';
-@import 'media-queries.css';
-@import 'layout.css';
-@import 'contact.css';
+@import './base.css';
+@import './components.css';
+@import './media-queries.css';
+@import './layout.css';
+@import 'pages/contact.css';
+@import './custom-variables.css';

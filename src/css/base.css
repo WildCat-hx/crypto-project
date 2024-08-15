@@ -1,7 +1,5 @@
 /********************IMPORTS ET POLICES*********************/
 
-@import url('../scss/styles.scss');
-
 @font-face {
     font-family: 'Roboto';
     src: url('../autres/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
@@ -18,11 +16,20 @@
 
 /**********************ELEMENTS BASE PAGE*********************/
 
+html, body {
+    height: fit-content;
+}
+
 body {
-    min-height: 100%;
     height: auto;
     width: 100%;
     background-color: var(--white);
+}
+
+main {
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
 }
 
 *,
@@ -66,4 +73,8 @@ span {
 a {
     color: var(--link-color);
     text-decoration: none;
+}
+
+textarea {
+    resize: none;
 }

@@ -1,0 +1,33 @@
+:root {
+    /* Colors */
+    --black:#000000;
+    --dark-blue: #000057;
+    --navy-blue : #0000B6;
+    --violet:#3d21d4;
+    --light-pink:#ff6699!important;
+    --soft-pink:#E34879!important;
+    --white:#fafafa;
+    --ultra-white: #ffffff;
+    --light-grey: rgb(241, 241, 241);
+    --grey:#808080;
+
+    /* Project color definitions */
+    --bg-color: var(--white);
+    --bg-section-color: var(--light-grey);
+    --main-color:var(--dark-blue);
+    --text-color: var(--grey);
+    --link-color: var(--white);
+    --link-register: var(--navy-blue);
+    --btn-color:var(--light-pink);
+    --btn-color-hover:var(--soft-pink);
+
+    /* Font sizes */
+    --font-size-small:15px;
+    --font-size-medium:18px;
+    --font-size-big:36px;
+
+    /* Weight sizes */
+    --font-weight-light: 400;
+    --font-weight-normal:600;
+    --font-weight-bold:700;
+}

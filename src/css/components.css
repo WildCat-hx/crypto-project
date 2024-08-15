@@ -190,10 +190,6 @@
     font-size: 40px;
 }
 
-.form-row > div {
-    padding-bottom: 2rem;
-}
-
 .inline-name > div {
     display: flex;
     flex-direction: column;
@@ -277,4 +273,10 @@
 
 .miss-crypto-container {
     flex-direction: row-reverse;
+}
+
+/**************************LOGIN/REGISTER***********************/
+
+.inline-name > .form-group {
+    padding-right: 1rem;
 }
