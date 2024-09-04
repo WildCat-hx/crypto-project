@@ -1,6 +1,7 @@
 export const scrollTop = document.getElementById("scroll_Top");
 export const navbarWhite = document.querySelector(".navbar");
 export const loginButton = document.getElementById("loginButton");
+export const loginButtonFooter = document.getElementById("login-button-footer");
 export const loginModal = document.getElementById("loginModal");
 export const closeModal = document.getElementsByClassName("close")[0];
 export const overlay = document.getElementById("overlay");
