@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass-to-css": "node-sass src/sass/_variables.scss dist/css/variables.css -w"
   },
-  "author": "",
+  "author": "Salomé Cadillon",
   "license": "ISC",
   "dependencies": {
     "node-sass": "^9.0.0"
