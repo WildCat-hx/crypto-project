@@ -1,3 +1,5 @@
+"use strict";
+
 export const scrollTop = document.getElementById("scroll_Top");
 export const navbarWhite = document.querySelector(".navbar");
 export const loginButton = document.getElementById("loginButton");
