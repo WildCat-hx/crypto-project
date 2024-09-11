@@ -1,6 +1,9 @@
 # logs
 *.logs
 
+# fichiers projet
+test-page.html
+
 # fichiers .git
 .git
 
