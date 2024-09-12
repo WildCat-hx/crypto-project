@@ -22,10 +22,9 @@ section h2 {
 
 .navbar {
     --bs-navbar-padding-y: 1rem;
-    position: fixed;
-    top: 0;
     width: 100%;
     background-color: var(--ultra-white);
+    height: 95px;
 }
 
 .navbar-brand {
