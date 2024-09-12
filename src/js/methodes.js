@@ -40,7 +40,7 @@ export function closeLoginModal() {
 
 export function updateClassName() {
 
-    if (window.innerWidth >= 820) {
+    if (window.innerWidth <= 820) {
         navbarContainer.classList.remove("d-flex");
         navbarContainer.classList.add("container");
     } else {
