@@ -9,7 +9,11 @@ import {
     overlay,
     updateClassName,
     debounce,
-    storeScroll
+    storeScroll,
+    scrollFunct,
+    navbarWhite,
+    scrollTop,
+    scrollToTop
 } from './methodes.js'
 
 document.addEventListener("DOMContentLoaded", initEventListeners);
@@ -19,7 +23,12 @@ function initEventListeners() {
     addClickListener(loginButton, toggleLoginModal, 'loginButton');
     addClickListener(loginButtonFooter, toggleLoginModal, 'loginButtonFooter');
     addClickListener(closeModal, closeLoginModal, 'closeModal');
-    document.addEventListener('scroll', debounce(storeScroll, 50));
+    addClickListener(scrollTop, scrollToTop, 'scrollTop');
+
+    document.addEventListener('scroll', debounce(storeScroll, 200));
+
+    navbarWhite ? window.addEventListener('scroll', debounce(scrollFunct, 200)) : console.error("navbar is null");
+
     window.addEventListener('resize', debounce(updateClassName, 200));
 
     overlay.addEventListener('click', (event) => {
