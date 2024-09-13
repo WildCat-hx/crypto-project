@@ -3,10 +3,6 @@
       padding: 1rem;
     }
 
-    .desktop-view  {
-        display: block;
-    }
-
     .mobile-view {
         display: none;
     }
