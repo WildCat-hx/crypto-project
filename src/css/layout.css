@@ -25,12 +25,22 @@ section h2 {
     width: 100%;
     background-color: var(--ultra-white);
     height: 95px;
+    position: absolute;
+    top: 0;
 }
 
 .navbar-brand {
     font-weight: var(--font-weight-normal);
     font-size: 25px;
     color: var(--main-color);
+}
+
+html:not([data-scroll='0']) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
+    }
 }
 
 /*************************FOOTER************************/
