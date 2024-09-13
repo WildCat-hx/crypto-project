@@ -32,6 +32,17 @@
     font-size: var(--font-size-medium);
 }
 
+.navbar-toggler {
+    position: absolute;
+    top: 45px;
+    left: 15px;
+}
+
+/********************MENU NAVIGATION*******************/
+
+.navbar > .container-fluid {
+    justify-content: space-between;
+}
 
 /********************BOUTONS ACCESSIBILITE*******************/
 
@@ -136,6 +147,10 @@
 
 .banner-wrapper > div {
     padding: 2rem;
+}
+
+.banner-container p, h1 {
+    text-align: justify;
 }
 
 .left-section p, h1{
