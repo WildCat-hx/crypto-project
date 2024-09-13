@@ -1,7 +1,6 @@
 "use strict";
 
 export const scrollTop = document.getElementById("scroll_Top");
-export const navbarWhite = document.querySelector(".navbar");
 export const loginButton = document.getElementById("loginButton");
 export const loginButtonFooter = document.getElementById("login-button-footer");
 export const loginModal = document.getElementById("loginModal");
@@ -9,21 +8,44 @@ export const closeModal = document.getElementsByClassName("close")[0];
 export const overlay = document.getElementById("overlay");
 export const navbarContainer = document.getElementById("navbar-container");
 
-export function scrollFunct() {
+/** 
+ * 
+ * Fonction storeScroll: 
+ * 
+ * Récupere la position du scroll et la conserve dans l'attribut data pour
+ * l'utiliser dans le CSS.
+ *  
+**/
 
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        scrollTop.style.display = "block";
-    } else {
-        scrollTop.style.display = "none";
-    }
+export const storeScroll = () => {
+    document.documentElement.dataset.scroll = window.scrollY;
 }
 
+storeScroll();
+
+/** 
+ * 
+ * Fonction toggleLoginModal: 
+ * 
+ * Affiche le component modal au click du bouton loginButton si il n'est pas déjà
+ * affiché sinon ne le réaffiche pas.
+ *  
+**/
+
 export function toggleLoginModal() {
-    var status = loginModal.style.display
+    let status = loginModal.style.display
     let stat = (status === "none") ? "block" : "none";
     loginModal.style.display = stat;
     overlay.style.display = stat;
 }
+
+/** 
+ * 
+ * Fonction closeLoginModal: 
+ * 
+ * Cache le component modal au click du bouton "x" a l'exterieur du modal sur l'overlay.
+ *  
+**/
 
 export function closeLoginModal() { 
     loginModal.style.display = "none";

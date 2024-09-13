@@ -1,16 +1,15 @@
 "use strict";
 
 import { 
-    navbarWhite, 
     loginButton,
     loginButtonFooter, 
     closeModal, 
-    scrollFunct, 
     toggleLoginModal,
     closeLoginModal,
     overlay,
     updateClassName,
-    debounce
+    debounce,
+    storeScroll
 } from './methodes.js'
 
 document.addEventListener("DOMContentLoaded", initEventListeners);
@@ -20,7 +19,7 @@ function initEventListeners() {
     addClickListener(loginButton, toggleLoginModal, 'loginButton');
     addClickListener(loginButtonFooter, toggleLoginModal, 'loginButtonFooter');
     addClickListener(closeModal, closeLoginModal, 'closeModal');
-    navbarWhite ? window.addEventListener('scroll', scrollFunct) : console.error("navbarWhite is null");
+    document.addEventListener('scroll', debounce(storeScroll, 50));
     window.addEventListener('resize', debounce(updateClassName, 200));
 
     overlay.addEventListener('click', (event) => {
