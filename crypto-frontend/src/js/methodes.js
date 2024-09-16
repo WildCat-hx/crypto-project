@@ -8,6 +8,9 @@ export const loginModal = document.getElementById("loginModal");
 export const closeModal = document.getElementsByClassName("close")[0];
 export const overlay = document.getElementById("overlay");
 export const navbarContainer = document.getElementById("navbar-container");
+export const stepsElements = document.getElementsByClassName("step");
+
+console.log(stepsElements);
 
 
 export function scrollFunct() {

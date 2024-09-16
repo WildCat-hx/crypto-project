@@ -25,7 +25,10 @@ function initEventListeners() {
     addClickListener(closeModal, closeLoginModal, 'closeModal');
     addClickListener(scrollTop, scrollToTop, 'scrollTop');
 
-    document.addEventListener('scroll', debounce(storeScroll, 200));
+    document.addEventListener('scroll', debounce(() => {
+        storeScroll();
+        updateClassName();
+    }, 200));
 
     navbarWhite ? window.addEventListener('scroll', debounce(scrollFunct, 200)) : console.error("navbar is null");
 

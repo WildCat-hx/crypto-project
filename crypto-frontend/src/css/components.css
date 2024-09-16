@@ -261,6 +261,16 @@
     padding: 1rem;
 }
 
+.steps-container > .hidden {
+    display: none;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.steps-container > .visible {
+    transform: translateY(0);
+}
+
 .step img {
     width: 180px;
     height: 180px;

@@ -1,0 +1,75 @@
+.contact-me {
+    margin: 150px 0;
+    padding: 2rem;
+}
+
+.title-container {
+    text-align: center;
+    margin: 2rem;
+}
+
+.inline-name {
+    display: flex;
+}
+
+div.inline {
+    width: 100%;
+}
+
+div.inline:nth-child(1) {
+    padding-right: 2rem;
+    width: 415px;
+}
+
+.contact-grid {
+    width: auto;
+    height: auto;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+div.form-row {
+    padding-bottom: 2rem;
+}
+
+.form-control {
+    max-width: 800px;
+}
+
+.form-control:focus {
+    border-color: var(--light-pink);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px var(--soft-pink);
+}
+
+.contact-info {
+    background-color: rgb(233, 233, 233);
+    border-radius: 10%;
+}
+
+.info-container {
+    padding: 1rem;
+}
+
+.info a {
+    color: var(--text-color);
+}
+
+.socials {
+    display: flex;
+}
+
+div.contact {
+    background-color: var(--bg-color);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+div.contact img {
+    cursor: pointer;
+}
+
+div.info {
+    text-align: center;
+    padding-bottom: 1rem;
+}

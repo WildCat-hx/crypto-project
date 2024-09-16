@@ -109,22 +109,21 @@
     }
 
     .contact-grid {
-        grid-template-rows: 1fr 2fr;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .title-container {
+        margin-bottom: 2rem;
+    }
+
+    .form-container {
+        display: none;
     }
 
     .inline-name {
-        display: grid;
-        gap: 1rem;
-        grid-template-rows: 1fr 1fr;
-    }
-
-    .left-side h2 {
-        text-align: center;
-    }
-
-    .left-side p {
-        text-align: justify;
+        display: block;
     }
 
     .col-md-6 {

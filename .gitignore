@@ -8,7 +8,7 @@ test-page.html
 .git
 
 # dossier npm cache
-.npm
+npm
 
 # dossiers dependances
 node_modules/
@@ -17,4 +17,4 @@ node_modules/
 dist/
 
 # fichiers specifiques a VSCODE
-.vscode/
+.vscode
