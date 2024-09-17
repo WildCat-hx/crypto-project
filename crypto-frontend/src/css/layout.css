@@ -60,7 +60,7 @@ html:not([data-scroll='0']) {
     height: auto;
 }
 
-div.footer-item {
+.footer-item {
     width: 100%;
     height: auto;
     display: flex;
