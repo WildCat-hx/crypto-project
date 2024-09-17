@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CryptoGoal.io</title>
     <link rel="icon" type="image" href="src/assets/img/svg-icons/ethereum.svg">
+    <meta name="google-signin-client_id" content="419602460957-dnvif1r3ve55rqidjn8q682a9iob8ijb.apps.googleusercontent.com">
     <meta name="description" content="Tool to help users create accountability contrats." />
     <meta name="keywords" content="cryptocurrency, accountability, contracts, Ethereum">
     <meta name="author" content="Salomé Cadillon">
@@ -19,10 +20,11 @@
     <script type="module" src="../src/js/scripts.js" defer></script>
 <!--END MODULES JAVASCRIPT-->
 
-<!--CDN JAVASCRIPT LIBRARIES-->
+<!--JAVASCRIPT LIBRARIES-->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<!--END CDN JAVASCRIPT LIBRARIES-->
+<!--END JAVASCRIPT LIBRARIES-->
 </head>
 
 <body>
@@ -72,8 +74,35 @@
 
 <!--MAIN-->
     <main role="main">
-        <div class="">
-
+        <div class="login-page">
+            <div class="login-wrapper">
+                <div class="login-container">
+                    <div class="grid-item">
+                        <img src="../src/assets/img/svg-icons/ethereum.svg" width="28" height="28" alt="Logo" loading="lazy">
+                        <span>CryptoGoal.io</span>
+                    </div>
+                    <div class="grid-item">
+                        <section>
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" name="email" class="form-control email" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email" required>
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                    <div class="invalid-feedback">Please provide a valid email address.</div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </section>
+                        <section>
+                            <div class="g-signin2" data-onsuccess="onSignIn">
+                                <a data-provider="Google" href="">
+                                    Sign In
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 <!--END MAIN-->
