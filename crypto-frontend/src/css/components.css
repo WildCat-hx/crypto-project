@@ -28,20 +28,24 @@
     color: var(--btn-color-hover);
 }
 
+/********************MENU NAVIGATION*******************/
+
+.navbar > .container-fluid {
+    justify-content: space-between;
+}
+
 .nav-link {
     font-size: var(--font-size-medium);
+}
+
+.nav-link-btn {
+    color: var(--light-pink);
 }
 
 .navbar-toggler {
     position: absolute;
     top: 32px;
     left: 15px;
-}
-
-/********************MENU NAVIGATION*******************/
-
-.navbar > .container-fluid {
-    justify-content: space-between;
 }
 
 /********************BOUTONS ACCESSIBILITE*******************/
