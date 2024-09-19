@@ -10,6 +10,7 @@
   "author": "Salomé Cadillon",
   "license": "ISC",
   "dependencies": {
+    "crypto-website": "file:",
     "node-sass": "^9.0.0"
   }
 }
