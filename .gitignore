@@ -1,3 +1,22 @@
+####### WINDOWS #######
+
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Folder config file
+[Dd]esktop.ini
+
+############ PROJECT #########
+
 # logs
 *.logs
 
@@ -10,11 +29,11 @@ test-page.html
 # dossier npm cache
 npm
 
-# dossiers dependances
+# Modules Node
 node_modules/
 
-# Dossier de build
-dist
+# Build output
+dist/
 
 # fichiers specifiques a VSCODE
 .vscode

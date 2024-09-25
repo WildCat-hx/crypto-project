@@ -5,13 +5,12 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass-to-css": "node-sass src/sass/_variables.scss dist/css/variables.css -w"
+    "build:tailwind": "npx tailwindcss build src/css/tailwind.css -o dist/style.css"
   },
   "author": "Salomé Cadillon",
   "license": "ISC",
   "dependencies": {
-    "crypto-website": "file:",
-    "node-sass": "^9.0.0"
+    "crypto-website": "file:"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
