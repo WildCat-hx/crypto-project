@@ -1,3 +1,80 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+
+    @font-face {
+        font-family: 'Roboto';
+        src: url('../assets/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+        font-style: normal;
+        font-weight: 700;
+    }
+    
+    @font-face {
+        font-family: 'Open Sans';
+        src: url('../assets/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf') format('truetype');
+        font-weight: 300 700;
+        font-style: normal;
+    }
+
+    html {
+        @apply box-border scroll-smooth;
+    }
+
+    html, body {
+        @apply h-full w-full m-0 p-0 overflow-x-hidden;
+    }
+
+    main {
+        @apply m-0 w-full overflow-hidden;
+    }
+
+    footer {
+        @apply overflow-hidden w-full bg-blue-950;
+    }
+
+    h1, h2, p, a, span {
+        @apply font-sans;
+    }
+}
+
+@layer components {
+    .btn {
+        @apply font-bold py-2 px-4 rounded;
+    }
+    
+    .btn-blue {
+        @apply bg-blue-800 text-white;
+    }
+    
+    .btn-blue:hover {
+        @apply bg-blue-900;
+    }
+    
+    .link {
+        @apply text-white text-lg;
+    }
+
+    .link:hover,
+    .link:focus {
+       @apply underline underline-offset-4; 
+    }
+    
+    .footer-item {
+        @apply font-semibold 
+    }
+
+    .circle-social {
+        @apply flex justify-center rounded-full h-12 w-12 bg-white;
+    }
+
+    .facebook:hover {
+        @apply bg-blue-600;
+    }
+
+    .instagram:hover {
+        @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500;
+    }
+}
