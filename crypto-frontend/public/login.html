@@ -10,146 +10,175 @@
     <meta name="description" content="Tool to help users create accountability contrats." />
     <meta name="keywords" content="cryptocurrency, accountability, contracts, Ethereum">
     <meta name="author" content="Salomé Cadillon">
-
 <!--STYLESHEETS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="../src/css/styles.css">
+    <link rel="stylesheet" href="../dist/style.css">
 <!--END STYLESHEETS-->
 
 <!--MODULES JAVASCRIPT-->
     <script type="module" src="../src/js/scripts.js" defer></script>
 <!--END MODULES JAVASCRIPT-->
 
-<!--JAVASCRIPT LIBRARIES-->
+<!--JAVASCRIPT LIBRAIRIES/CDN-->
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<!--END JAVASCRIPT LIBRARIES-->
+    <script src="https://cdn.tailwindcss.com"></script>
+<!--JAVASCRIPT LIBRAIRIES/CDN-->
 </head>
 
 <body>
-<!--HEADER-->
+
     <header class="header">
-<!--NAVIGATION-->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button> 
-            <a class="navbar-brand" href="./index.html">
-                <img src="../src/assets/img/svg-icons/ethereum.svg" alt="CryptoGoal logo" width="30" height="30" class="d-inline-block align-text-top" loading="lazy">
-                CryptoGoal.io
-            </a>
-            
-            <div id="navbar-container" class="d-flex">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
+        <nav class="w-full h-50 bg-white absolute top-0">
+            <div class="flex flex-wrap items-center justify-between mx-auto">
+                <div class="lg:hidden">
+                    <button class="navbar-burger flex items-center text-blue-950 p-3">
+                        <svg class="block h-6 w-6 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <title>Menu Burger</title>
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                        </svg>
+                    </button> 
+                </div>
+                <div class="flex ml-10 my-5">
+                    <a href="#" class="inline-flex">
+                        <img src="../src/assets/img/svg-icons/ethereum.svg" alt="CryptoGoal logo" width="30" height="30" class="d-inline-block align-text-top" loading="lazy">
+                        <span class="text-blue-950 text-3xl font-semibold">CryptoGoal.io</span>
+                    </a>
+                </div>
+                <div class="items-center justify-between w-full lg:flex lg:w-auto lg:order-1 sm:hidden">
+                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                        <li>
+                            <a href="#">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">About</a>
+                        <li>
+                            <a href="#">About</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./contact.html">Contact</a>
+                        <li>
+                            <a href="#">Test-login</a>
                         </li>
-                        <li class="nav-item button">
-                            <button type="button" class="btn btn-primary" id="loginButton">
-                                <a class="nav-link-btn" href="./login.html">LOGIN</a>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <button class="btn btn-blue">
+                                <a href="#">LOGIN</a>
                             </button>
                         </li>
-                        <li class="nav-item button">
-                            <button type="button" class="btn btn-primary" id="registerButton">
+                        <li>
+                            <button class="btn btn-blue">
                                 <a href="#">REGISTER</a>
                             </button>
                         </li>
                     </ul>
                 </div>
             </div>
-        </div>
-    </nav>
-<!--END NAVIGATION-->
+            
+        </nav>
     </header>
-<!--END HEADER-->
 
 <!--MAIN-->
     <main role="main">
-        <div class="login-page">
-            <div class="login-wrapper">
-                <div class="login-container">
-                    <div class="grid-item">
-                        <img src="../src/assets/img/svg-icons/ethereum.svg" width="28" height="28" alt="Logo" loading="lazy">
-                        <span>CryptoGoal.io</span>
-                    </div>
-                    <div class="grid-item">
-                        <section>
-                            <form>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Email address</label>
-                                    <input type="email" name="email" class="form-control email" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email" required>
-                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                                    <div class="invalid-feedback">Please provide a valid email address.</div>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                            </form>
-                        </section>
-                        <section>
-                            <div class="g-signin2" data-onsuccess="onSignIn">
-                                <a data-provider="Google" href="">
-                                    Sign In
-                                </a>
-                            </div>
-                        </section>
+
+        <div class="flex justify-center align-middle">
+            <div class="my-auto mr-20">
+                <h1 class="font-bold text-blue-950 text-4xl pb-8">Talk is cheap.<br>Crypto's not.</h1>
+                <p class="pb-8 text-lg">
+                    CryptoGoal is a goal-keeping tool that assists<br class="hide-br">
+                    users with creating accountability<br class="hide-br">
+                    smart contracts.
+                </p>
+                <button class="btn btn-blue">
+                    <a href="#">Start now</a>
+                </button>
+            </div>
+            <div class="">
+                <img src="../src/assets/img/png/img-banniere.png" alt="CryptoGoal Banner" loading="lazy">
+            </div>
+        </div>
+
+        <div class="w-full bg-[#f1f1f1]">
+            <div class="my-auto">
+                <h2 class="text-center font-bold text-3xl py-10 text-blue-950">How it works</h2> 
+                <div class="flex justify-center items-center">
+                    <div class="flex sm:flex-wrap md:flex-wrap gap-20">
+                        <div class="step">
+                            <img src="../src/assets/img/png/etape-une.png" alt="etape-un" loading="lazy">
+                             <p class="text-center">Set your goal and<br>deadline.</p>
+                        </div>
+                        <div class="step">
+                            <img src="../src/assets/img/png/etape-deux.png" alt="etape-deux" loading="lazy">
+                            <p class="text-center">Deposit Ethereum <br>into an accountability<br>smart contract.</p>
+                        </div>
+                        <div class="step">
+                            <img src="../src/assets/img/png/etape-trois.png" alt="etape-trois" loading="lazy">
+                            <p class="text-center">Accomplish your goal<br>to get your crypto<br>back.</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            
         </div>
+        
     </main>
 <!--END MAIN-->
 
 <!--FOOTER-->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-wrapper">
-                <div class="logo">
-                    <div class="logo-container">
+    <footer>
+            <div class="p-10">
+                <div class="text-center p-3">
+                    <div class="flex justify-center items-center">
                         <img src="../src/assets/img/svg-icons/ethereum.svg" width="28" height="28" alt="Logo" loading="lazy">
-                        <span>CryptoGoal.io</span>
+                        <h2 class="text-white font-semibold text-4xl">CryptoGoal.io</h2>
                     </div>
                 </div>
 
-                <div class="footer-navigation">
-                    <div class="site-navigation footer-item">
-                        <ul class="footer-ul">
-                            <li class="nav-footer-items"><a href="#" class="text-decoration-none">Our site</a></li>
-                            <li class="nav-footer-items"><a href="#" class="text-decoration-none">Home</a></li>
-                            <li class="nav-footer-items"><a href="#" class="text-decoration-none">About Us</a></li>
-                            <li class="nav-footer-items"><a href="./contact.html" class="text-decoration-none">Contact</a></li>
+                <div class="flex p-5 h-auto m-0">
+                    <div class="w-full h-auto flex justify-center text-center">
+                        <ul>
+                            <li class="footer-item">
+                                <a href="#" class="link">Our site</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="./index.html" class="link">Home</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="link">About Us</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="./contact.html" class="link">Contact</a>
+                            </li>
                         </ul>
                     </div>
-                    <div class="site-login footer-item">
-                        <ul class="footer-ul">
-                            <li class="nav-footer-items"><a href="#" class="text-decoration-none">For you</a></li>
-                            <li class="nav-footer-items"><a href="#" class="text-decoration-none">Register</a></li>
-                            <li class="nav-footer-items"><a href="#" id="login-button-footer" class="text-decoration-none">Login</a></li>
-                            <li class="nav-footer-items"><a href="#" class="text-decoration-none">Terms & Conditions</a></li>
+                    <div class="w-full h-auto flex justify-center text-center">
+                        <ul>
+                            <li class="footer-item">
+                                <a href="#" class="link">For you</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="link">Register</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" id="login-button-footer" class="link">Login</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="link">Terms & Conditions</a>
+                            </li>
                         </ul>
                     </div>
-                    <div class="site-socials footer-item">
-                        <span>Social Media</span>
-                        <div class="social-container">
-                            <div class="circle">
-                                <a href="https://www.facebook.com/" target="_blank">
+                    <div class="w-full h-auto text-center m-auto">
+                        <span class="link footer-item">Social Media</span>
+                        <div class="flex justify-center gap-4 pt-4">
+                            <div class="circle-social facebook">
+                                <a href="https://www.facebook.com/" target="_blank" class="pt-1">
                                     <img src="../src/assets/img/svg-icons/facebook.svg" alt="Facebook" loading="lazy">
                                 </a>
                             </div>
-                            <div class="circle">
+                            <div class="circle-social">
                                 <a href="https://twitter.com/Accueil" target="_blank">
                                     <img src="../src/assets/img/png/x-logo-black-and-white.png" alt="X-twitter" loading="lazy" class="x-logo-img">
                                 </a>
                             </div>
-                            <div class="circle">
-                                <a href="https://www.instagram.com/" target="_blank" >
+                            <div class="circle-social instagram">
+                                <a href="https://www.instagram.com/" target="_blank" class="p-1">
                                     <img src="../src/assets/img/svg-icons/instagram.svg" alt="Instagram" loading="lazy">
                                 </a>
                             </div>
@@ -157,15 +186,14 @@
                     </div>
                 </div>
             </div>
-            <div class="copyrights">
-                <span>©2024 All rights reserved - <a href="#">Salomé Cadillon</a></span>
-            </div>
+        <div class="text-center bg-black p-3 w-full">
+            <span class="text-white text-lg">©2024 All rights reserved - <a href="#" class="link">Salomé Cadillon</a></span>
         </div>
     </footer>
 <!--END FOOTER-->
-    <button id="scroll_Top">
-        <a class="scroll_Top_link" href="#scrollTopAnchor">
-                <img class="arrowUp" src="../src/assets/img/svg-icons/arrow-up.svg" alt="scroll to top" loading="lazy">
+    <button id="scroll_Top" class="fixed top-80 right-5">
+        <a class="cursor-pointer" href="#scrollTopAnchor">
+            <img class="h-4 w-4" src="../src/assets/img/svg-icons/arrow-up.svg" alt="scroll to top" loading="lazy">
         </a>
     </button>
 
