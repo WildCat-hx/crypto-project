@@ -19,8 +19,14 @@
         font-style: normal;
     }
 
+    *,
+    *::before,
+    *::after {
+        @apply m-0 p-0 box-border;
+    }
+
     html {
-        @apply box-border scroll-smooth;
+        @apply box-border scroll-smooth text-base;
     }
 
     html, body {
