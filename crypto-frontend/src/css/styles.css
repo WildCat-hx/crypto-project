@@ -1,7 +1,7 @@
-@import 'base.css';
-@import 'components.css';
-@import 'media-queries.css';
-@import 'layout.css';
-@import 'custom-variables.css';
-@import 'pages/contact.css';
-@import 'pages/login.css';
+@import url('base.css');
+@import url('components.css');
+@import url('media-queries.css');
+@import url('layout.css');
+@import url('custom-variables.css');
+@import url('pages/contact.css');
+@import url('pages/login.css');
